@@ -4,7 +4,7 @@
 
     <groupId>customspringpetclinic</groupId>
     <artifactId>custom-spring-petclinic</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -51,6 +51,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/1vanC1ndr1c/custom-spring-petclinic.git</developerConnection>
-      <tag>custom-spring-petclinic-0.0.3</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
