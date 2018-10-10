@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>custom-spring-petclinic</artifactId>
-        <groupId>guru.springframework</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>customspringpetclinic</groupId>
+        <version>0.0.3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,8 +14,8 @@
     <dependencies>
         <dependency><!-- connecting to other dependecy -->
             <artifactId>pet-clinic-data</artifactId>
-            <groupId>guru.springframework</groupId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>customspringpetclinic</groupId>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
