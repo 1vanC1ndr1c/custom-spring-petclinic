@@ -45,12 +45,14 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
-        <developerConnection>scm:git:https://github.com/1vanC1ndr1c/custom-spring-petclinic.git</developerConnection>
+        <connection>scm:git:file:///C:\Users\Ivan\IdeaProjects\custom-spring-petclinic</connection>
+        <developerConnection>scm:git:file:///C:\Users\Ivan\IdeaProjects\custom-spring-petclinic</developerConnection>
       <tag>HEAD</tag>
   </scm>
 </project>
