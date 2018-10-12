@@ -4,8 +4,7 @@ import customspringpetclinic.model.Owner;
 import customspringpetclinic.model.Vet;
 import customspringpetclinic.services.OwnerService;
 import customspringpetclinic.services.VetService;
-import customspringpetclinic.services.map.OwnerServiceMap;
-import customspringpetclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {//refactor in the future
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired//not needed
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

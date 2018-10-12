@@ -2,10 +2,12 @@ package customspringpetclinic.services.map;
 
 import customspringpetclinic.model.Owner;
 import customspringpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 
+@Service// functionally, component and service are the same, but this indicates the behaviour
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 
