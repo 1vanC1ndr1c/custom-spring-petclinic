@@ -1,5 +1,14 @@
 customspringpetclinic\model\Pet.class
-customspringpetclinic\model\Owner.class
-customspringpetclinic\model\PetType.class
+customspringpetclinic\services\VetService.class
+customspringpetclinic\model\BaseEntity.class
 customspringpetclinic\model\Person.class
+customspringpetclinic\model\Owner.class
+customspringpetclinic\services\PetService.class
+customspringpetclinic\model\PetType.class
+customspringpetclinic\services\map\AbstractMapService.class
+customspringpetclinic\services\map\VetServiceMap.class
 customspringpetclinic\model\Vet.class
+customspringpetclinic\services\CrudService.class
+customspringpetclinic\services\map\OwnerServiceMap.class
+customspringpetclinic\services\map\PetServiceMap.class
+customspringpetclinic\services\OwnerService.class
