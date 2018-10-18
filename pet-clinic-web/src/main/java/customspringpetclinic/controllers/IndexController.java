@@ -12,5 +12,10 @@ public class IndexController {
         return "index";//look for a template called index
 
     }
+
+    @RequestMapping("/oups")
+    public String oupsHandler(){
+        return "notimplemented";
+    }
 }
 
