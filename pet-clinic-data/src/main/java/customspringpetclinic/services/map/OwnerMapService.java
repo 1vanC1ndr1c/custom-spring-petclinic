@@ -6,12 +6,14 @@ import customspringpetclinic.model.PetType;
 import customspringpetclinic.services.OwnerService;
 import customspringpetclinic.services.PetService;
 import customspringpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 
 @Service// functionally, component and service are the same, but this indicates the behaviour
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
