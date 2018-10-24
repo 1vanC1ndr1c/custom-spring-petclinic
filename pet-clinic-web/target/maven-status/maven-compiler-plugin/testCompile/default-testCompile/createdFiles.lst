@@ -1,1 +1,4 @@
 customspringpetclinic\CustomSpringPetclinicApplicationTests.class
+customspringpetclinic\controllers\OwnerControllerTest.class
+customspringpetclinic\services\map\OwnerMapServiceTest.class
+customspringpetclinic\services\springdatajpa\OwnerSDjpaServiceTest.class

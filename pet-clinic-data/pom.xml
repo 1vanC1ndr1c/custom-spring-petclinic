@@ -52,6 +52,12 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>2.22.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -73,6 +79,7 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
+                <!--
                 <dependencies>
                     <dependency>
                         <groupId>org.junit.platform</groupId>
@@ -80,7 +87,9 @@
                         <version>${junit-platform.version}</version>
                     </dependency>
                 </dependencies>
+                   -->
             </plugin>
+
         </plugins>
     </build>
 
