@@ -3,10 +3,13 @@ package customspringpetclinic.controllers;
 import customspringpetclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
 
 @RequestMapping("/owners")//this one combines with the one below
 @Controller
@@ -18,6 +21,13 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
+    @InitBinder//http variables to java objects
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        //we don't allow the webforms to use id property
+        //good for security
+        dataBinder.setDisallowedFields("id");
+    }
+
     @RequestMapping({"/", "", "Index", "Index.html", "index", "index.html"})
     public String listOwners(Model model) {//by adding Model, Spring MVC will automatically add when method is called
 
@@ -27,7 +37,7 @@ public class OwnerController {
     }
 
     @RequestMapping("/find")
-    public String findOwners(){
+    public String findOwners() {
         return "notimplemented";
     }
 
