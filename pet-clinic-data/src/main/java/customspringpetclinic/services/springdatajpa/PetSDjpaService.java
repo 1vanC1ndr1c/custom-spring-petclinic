@@ -1,6 +1,7 @@
 package customspringpetclinic.services.springdatajpa;
 
 import customspringpetclinic.model.Pet;
+
 import customspringpetclinic.repositories.PetRepository;
 import customspringpetclinic.services.PetService;
 import org.springframework.context.annotation.Profile;
@@ -18,6 +19,7 @@ public class PetSDjpaService implements PetService {
     public PetSDjpaService(PetRepository petRepository) {
         this.petRepository = petRepository;
     }
+
 
     @Override
     public Set<Pet> findAll() {

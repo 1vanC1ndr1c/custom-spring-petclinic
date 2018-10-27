@@ -28,7 +28,7 @@ class OwnerSDjpaServiceTest {
     OwnerRepository ownerRepository;
 
     @Mock
-    PetRepository petRepository;
+    PetRepository petService;
 
     @Mock
     PetTypeRepository petTypeRepository;

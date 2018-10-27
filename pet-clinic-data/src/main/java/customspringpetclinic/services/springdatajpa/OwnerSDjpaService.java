@@ -18,12 +18,12 @@ import java.util.Set;
 public class OwnerSDjpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
-    private final PetRepository petRepository;
+    private final PetRepository petService;
     private final PetTypeRepository petTypeRepository;
 
-    public OwnerSDjpaService(OwnerRepository ownerRepository, PetRepository petRepository, PetTypeRepository petTypeRepository) {
+    public OwnerSDjpaService(OwnerRepository ownerRepository, PetRepository petService, PetTypeRepository petTypeRepository) {
         this.ownerRepository = ownerRepository;
-        this.petRepository = petRepository;
+        this.petService = petService;
         this.petTypeRepository = petTypeRepository;
     }
 
